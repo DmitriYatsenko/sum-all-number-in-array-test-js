@@ -1,5 +1,10 @@
 function sumItems(array) {
-  // Sum all the numbers in the array
+  array = array.flat(Infinity);
+  let sum = 0;
+  for (let i=0; i<array.length; i++){
+    sum+=array[i];
+  }
+  return sum;
 }
 
 module.exports = sumItems;
